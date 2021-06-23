@@ -1,0 +1,171 @@
+body{
+	font-family: libre baskerville, serif;
+
+}
+
+.bodyindex {
+	font-family: libre baskerville, serif;
+	background-image: url("fotos/FondoI.jpg");
+	background-repeat: no-repeat;
+}
+
+.bodyCon{
+	background-color: #f1bebd;
+	font-family: libre baskerville, serif;
+}
+
+.divCon {
+	display: flex;
+	justify-content: center;
+	height: 50vh;
+	background-image: url("fotos/FondoCon.jpg");
+	background-repeat: no-repeat;
+	margin-bottom: 40px;
+}
+
+.h2Con{
+	margin-top: 150px;
+	margin-bottom: 20px;
+	color: #a55161;
+	font-weight: bolder;	
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.h1Index{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #a55161 ;
+	font-weight: bold;
+}
+
+
+header img:hover{
+	transform: rotate(180deg);
+}
+
+header nav div {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end; 
+	list-style: none;
+}
+
+header ul li a {
+ 		display: flex;
+ 		margin:10px 20px 10px 10px;
+ 		padding: 5px 15px 5px 10px;
+ 		font-family: Merriweather, serif;
+ 		font-weight: bold;
+ 		text-decoration: none;
+}
+
+header ul li a:hover {
+	border-bottom:3px solid pink;
+	transform: scale(1.1,1);
+
+
+}
+
+main{
+	min-height: 80vh;
+	height: cover;
+	margin: 10px;
+
+}
+
+
+.fondoFooter {
+	background-color: #80cbc4;
+	min-height: 10vh;
+}
+
+.parrafo1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.parrafo1 p {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.footertipo{ 
+	font-size: 12pt;
+}
+
+.redondo {
+	border-radius: 20px;
+}
+
+.redondo:hover {
+	transform: scale(1.1,1);
+	border:2px solid pink;
+}
+
+.fondo2{
+	background-color:#f1bebd ;
+}
+
+.inputnombre {
+	width: 200px; height: 20px;
+   transition: all 2s;
+}
+
+.inputnombre:focus { 
+	 width: 300px;
+   font-size: 24px;
+ }
+
+ .form {
+	 margin-left: 30vh;
+	 
+ }
+
+
+
+@media only screen and (max-width: 420px){
+
+	.bodyindex {
+		background-image: url("fotos/FondoMF.jpg");
+		font-family: baskerville, serif;
+	}
+
+	.Productos2 {
+ 	display: grid;
+ 	grid-template-columns: 100px;
+ 	grid-template-areas:
+ 	"div1"
+ 	"div2"
+ 	"div3"
+ 	"div4"
+ 	}
+
+ 	.div1{
+ 		grid-area: div1
+ 	}
+
+ 	.div2 {
+ 		grid-area: div2
+ 	}
+
+ 	.div3{
+ 		grid-area: div3
+ 	}
+
+ 	.div4{
+ 		grid-area: div4
+ 	}
+
+
+	aside {
+		display: none;
+	}
+}
